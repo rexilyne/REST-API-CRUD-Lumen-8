@@ -19,3 +19,4 @@ $router->get('/', function () use ($router) {
 });
 
 $router->post('/book', 'BookController@create');
+$router->get('/book', 'BookController@index');
