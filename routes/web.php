@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 /*
@@ -16,3 +17,5 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->post('/book', 'BookController@create');
